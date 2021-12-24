@@ -2,6 +2,7 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import Navbar from './Navbar';
 import Home from './Home';
 import Create from './Create';
+import BlogDetails from './BlogDetails';
 
 function App() {
 
@@ -11,12 +12,9 @@ function App() {
         <Navbar />
         <div className="content">
           <Switch>
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route exact path="/create">
-              <Create />
-            </Route>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/create" component={Create} />
+            <Route exact path="/blogs/:id" component={BlogDetails} />
           </Switch>
         </div>
       </div>
