@@ -85,7 +85,9 @@
   color: #f1356d;
   margin-bottom: 30px;
 }
-.create input, .create textarea, .create select {
+.create input,
+.create textarea,
+.create select {
   width: 100%;
   padding: 6px 10px;
   margin: 10px 0;
@@ -100,4 +102,9 @@
   padding: 8px;
   border-radius: 8px;
   cursor: pointer;
+}
+
+button.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
